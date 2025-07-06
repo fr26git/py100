@@ -1,0 +1,32 @@
+import random
+
+def play():
+    choice = input('Choose rock, paper, scissors (r/p/s): ').lower()
+    computer = random.choice(['rock', 'paper', 'scissors'])
+    print(computer)
+    if choice == 'r':
+        if computer == 'rock':
+            print('draw!')
+        elif computer == 'paper':
+            print('you lose!')
+        elif computer == 'scissors':
+            print('you win!')
+
+    elif choice == 'p':
+        if computer == 'paper':
+            print('draw!')
+        elif computer == 'scissors':
+            print('you lose!')
+        elif computer == 'rock':
+            print('you win!')
+
+    elif choice == 'scissors':
+        if computer == 'scissors':
+            print('draw!')
+        elif computer == 'rock':
+            print('you lose!')
+        elif computer == 'paper':
+            print('you win!')
+
+
+play()
